@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'learning react',
+    title: 'Get started',
   },
   plugins: ['gatsby-plugin-react-helmet'],
 }
