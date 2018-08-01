@@ -120,14 +120,23 @@ a {
   font-weight: 700;
   text-align: center;
   background: linear-gradient(104deg, #050a27 0%, #4a548c 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 640px) {
+  .Cards h2 {
+    font-size: 30px;
+  }
 }
 
 .CardGroup {
   margin: 50px 40px 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /* another and more concise solution here which avoids the two @media queries below is :
+  grid-template-columns : repeat(auto-fit, minmax(300%, 1 fr)) */
   grid-gap: 40px;
   justify-items: center;
 }
