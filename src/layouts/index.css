@@ -136,7 +136,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* another and more concise solution here which avoids the two @media queries below is :
-  grid-template-columns : repeat(auto-fit, minmax(300%, 1 fr)) */
+  grid-template-columns : repeat(auto-fit, minmax(300px, 1 fr)) */
   grid-gap: 40px;
   justify-items: center;
 }
