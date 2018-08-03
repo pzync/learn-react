@@ -152,3 +152,27 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+#SectionCaption {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #94a4ba;
+  text-align: center;
+  /* padding: 10px 0; */
+}
+
+.SectionCellGroup {
+  max-width: 800px;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  padding: 0 20px;
+}
+
+@media (max-width: 800px) {
+  .SectionCellGroup {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
